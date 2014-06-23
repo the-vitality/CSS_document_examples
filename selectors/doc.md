@@ -23,3 +23,29 @@
 5. `p[attr*="value"] {...}` 选择属性 attr 值中包含 value 字符串的p元素
 6. `p[attr^="value"] {...}` 选择属性 attr 的值以 value 开头的p元素
 7. `p[attr$="value"] {...}` 选择属性 attr 的值以 value 结尾的p元素
+8. `p[attr|="value"] {...}` 选择属性 attr 的值为 value 或以 value 开头的p元素
+
+
+#### 后代选择器
+
+1. `p em {...}`
+2. `p > em {...}`
+3. `p + em {...}`
+
+
+#### 伪类
+
+1. `a:link {...}`
+2. `a:visited {...}`
+3. `a:hover {...}`
+4. `a:active {...}`
+5. `input:focus {...}`
+6. `p:first-child {...}`
+7. `*:lang(fr)  {...}`
+
+
+#### 伪元素
+1. `a:first-letter {...}`
+2. `div:first-line {...}`
+3. `div:before {...}`
+4. `div:after {...}`
