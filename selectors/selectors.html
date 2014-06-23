@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Selectors</title>
+  <style>
+  body{background-color: #eee;}
+  div[data-player="player basketball"]{background-color: blue; color: white;}
+  div[data-player="player"]{background-color: red; color: white;}
+  div[data-player~="basketball"]{border: 1px solid white;}
+  div[data-player*="player"]{padding: 1em;}
+  div[data-player^="player"]{font-size: 1.3em;}
+  div[data-player$="basketball"]{letter-spacing: 10px;}
+  </style>
+</head>
+<body>
+  <div data-player="player basketball">
+    T-Mac
+  </div>
+  <div data-player="playerbasketball">
+    T-Mac
+  </div>
+</body>
+</html>
